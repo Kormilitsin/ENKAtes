@@ -271,11 +271,19 @@ margin-bottom: 20px;
 
 h2 {
 font-size: 35px;
+text-align: center;
 margin-bottom: 10px;
 }
 
 h3 {
 font-size: 34px;
+margin-bottom: 5px;
+text-align: center;
+margin: 0 auto;
+}
+
+h4 {
+font-size: 45px;
 margin-bottom: 5px;
 text-align: center;
 margin: 0 auto;
