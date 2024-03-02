@@ -248,11 +248,11 @@ margin-top: 10px;
 
 .vacancy-button {
 position: absolute;
-bottom: 20px;
+bottom: 12px;
 right: 20px;
 background-color: #009a63;
 color: white;
-padding: 21px 13px;
+padding: 18px 9px;
 border-radius: 5px;
 cursor: pointer;
 font-size: 24px;
