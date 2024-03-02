@@ -254,3 +254,34 @@ iframe {
 
 .empty-space {
   height: 50px;
+}
+
+h1 {
+font-size: 26px;
+text-align: center;
+margin-bottom: 20px;
+}
+
+h2 {
+font-size: 26px;
+text-align: center;
+margin-bottom: 10px;
+}
+
+h3 {
+font-size: 21px;
+margin-bottom: 5px;
+text-align: center;
+margin: 0 auto;
+}
+
+h4 {
+font-size: 26px;
+margin-bottom: 5px;
+text-align: center;
+margin: 0 auto;
+}
+
+p {
+font-size: 15px;
+}
