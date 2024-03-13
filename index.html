@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ЭНКА</title>
+  <link rel="icon" href="IMG/ikona.jpg" type="image/x-icon">
+  <script>
+    const screenWidth = window.innerWidth;
+    let deviceType;
+    if (screenWidth >= 1024) {
+      deviceType = "desktop";
+    } else {
+      deviceType = "mobile";
+    }
+    const styleLink = document.createElement("link");
+    styleLink.rel = "stylesheet";
+    if (deviceType === "desktop") {
+      styleLink.href = "CSS/desktop.css";
+    } else {
+      styleLink.href = "CSS/mobile.css";
+    }
+    document.head.appendChild(styleLink);
+	
+
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <a href="index.html"><img src="IMG/ENKA_cr.jpg" class="logo" width="200px" height="50px"></a>
+    <div class="tabs">
+      <div class="dropdown">
+        <button onclick="window.location.href='contacts.html'">Контакты</button>
+      </div>
+
+      <div class="dropdown">
+        <button onclick="window.location.href='projects.html'">Проекты</button>
+      </div>
+
+      <div class="dropdown">
+        <button onclick="window.location.href='job.html'">Вакансии</button>
+      </div>
+    </div>
+
+    <div class="reviews">
+      <h4>Отзывы</h4>
+
+      <!-- Здесь будет отображаться список отзывов -->
+      <ul class="review-list">
+        <!-- Пример отзыва -->
+        <li class="review-item">
+          <div class="review-item-header">
+            <span class="review-item-name">Админ</span>
+            <span class="review-item-date">3.03.2024</span>
+          </div>
+          <div class="review-item-text">
+            Отзывы временно не доступны
+          </div>
+        </li>
+      </ul>
+
+      <hr>
+
+       <h4>Оставить отзыв</h4>
+      <form id="review-form">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <br>
+        <label for="review">Отзыв:</label>
+        <textarea id="review" rows="4" cols="50" required></textarea>
+        <br>
+        <input type="submit" value="Отправить">
+      </form>
+    </div>
+  </div>
+  <div class="contacts">
+    <div class="contact-info">Телефон: +7 (906) 366-64-44<span class="divider"></span>Email: primer@mail.ru<span class="divider"></span>Адрес: Город Москва алтуфьевское шоссе дом 13 корпус 5 ООО "ЭНКА"</div>
+  </div>
+</body>
+
+</html>

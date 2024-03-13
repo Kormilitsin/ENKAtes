@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Вакансии</title>
+  <link rel="icon" href="IMG/ikona.jpg" type="image/x-icon">
+  <script>
+    const screenWidth = window.innerWidth;
+    let deviceType;
+    if (screenWidth >= 1024) {
+      deviceType = "desktop";
+    } else {
+      deviceType = "mobile";
+    }
+    const styleLink = document.createElement("link");
+    styleLink.rel = "stylesheet";
+    if (deviceType === "desktop") {
+      styleLink.href = "CSS/desktop.css";
+    } else {
+      styleLink.href = "CSS/mobile.css";
+    }
+    document.head.appendChild(styleLink);
+  </script>
+</head>
+
+<body>
+  <div class="container">
+	<a href="index.html"><img src="IMG/ENKA_cr.jpg" class="logo" width="200px" height="50px"></a>
+    <div class="tabs">
+      <div class="dropdown">
+        <button onclick="window.location.href='contacts.html'">Контакты</button>
+      </div>
+
+      <div class="dropdown">
+        <button onclick="window.location.href='projects.html'">Проекты</button>
+      </div>
+
+      <div class="dropdown">
+        <button onclick="window.location.href='job.html'">Вакансии</button>
+        </div>
+      </div>
+    <div class="vacancy">
+      <div class="vacancy-title">
+        <h4>Сварщик аргонной сварки</h4>
+      </div>
+	  <div class="salaryjob">Зарплата: 200 000р</div>
+      <div class="vacancy-description">
+        <p>Мы предлагаем:</p>
+        <ul>
+          <li>Работа вахтовым методом. Объекты - Сызрань, Москва, Ржев и Сибирь.</li>
+          <li>Возможные варианты графика: 45/30; 50/30; или обсуждаем ваш график</li>
+          <li>Командировочные суточные 700р</li>
+          <li>Испытательный срок 14 дней</li>
+        </ul>
+        <p>Задачи:</p>
+        <ul>
+          <li>Умение состовлять технологические карты по сварке</li>
+        </ul>
+        <p>Требования:</p>
+        <ul>
+          <li>3 уровень НАКС</li>
+          <li>Опыт сборки техногологических трубопроводов</li>
+          <li>Постоянные командировки по РФ</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="contacts">
+    <div class="contact-info">Телефон: +7 (906) 366-64-44<span class="divider"></span>Email: primer@mail.ru<span class="divider"></span>Адрес: Город Москва алтуфьевское шоссе дом 13 корпус 5 ООО "ЭНКА"</div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Контакты</title>
+  <link rel="icon" href="IMG/ikona.jpg" type="image/x-icon">
+  <script>
+    const screenWidth = window.innerWidth;
+    let deviceType;
+    if (screenWidth >= 1024) {
+      deviceType = "desktop";
+    } else {
+      deviceType = "mobile";
+    }
+    const styleLink = document.createElement("link");
+    styleLink.rel = "stylesheet";
+    if (deviceType === "desktop") {
+      styleLink.href = "CSS/desktop.css";
+    } else {
+      styleLink.href = "CSS/mobile.css";
+    }
+    document.head.appendChild(styleLink);
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <a href="index.html"><img src="IMG/ENKA_cr.jpg" class="logo" width="200px" height="50px"></a>
+    <div class="tabs">
+      <div class="dropdown">
+        <button onclick="window.location.href='contacts.html'">Контакты</button>
+      </div>
+
+      <div class="dropdown">
+        <button onclick="window.location.href='projects.html'">Проекты</button>
+      </div>
+
+      <div class="dropdown">
+        <button onclick="window.location.href='job.html'">Вакансии</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="kommuni"></div>
+    <h4>Контакты</h4>
+  <div class="office-info">
+    <h3>Генеральный директор</h3>
+    <p>Телефон: +7 (905) 116-04-66</p>
+    <p>ФИО: Борисов Дмитрий Геннадьевич</p>
+  </div>
+  <div class="office-info">
+    <h3>Директор</h3>
+    <p>Телефон: +7 903 960-18-11</p>
+    <p>ФИО: </p>
+  </div>
+   <div class="office-info">
+    <h3>Помощник руководителя</h3>
+    <p>Телефон: +7 (906) 366-64-44</p>
+    <p>ФИО: Яна</p>
+  </div>
+   <div class="office-info">
+    <h3>Отдел кадров</h3>
+    <p>Телефон: +7 (920) 483-22-86</p>
+    <p>ФИО: Кодолич Андрей Касьянович</p>
+  </div>
+  <div class="office-info">
+    <h3>Бухгалтер</h3>
+    <p>Телефон: +7 962 208-95-60</p>
+    <p>ФИО: Андрей</p>
+  </div>
+  <div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d484.5811825604352!2d37.576891893700406!3d55.85488076095798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b537a9374120e5%3A0x1c2aaf947361ecb1!2z0JDQu9GC0YPRhNGM0LXQstGB0LrQvtC1INGILiwgMTMg0LouNSwg0JzQvtGB0LrQstCwLCAxMjcxMDY!5e0!3m2!1sru!2sru!4v1709227655571!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <div class="contacts">
+    <div class="contact-info">Телефон: +7 (906) 366-64-44<span class="divider"></span>Email: primer@mail.ru<span class="divider"></span>Адрес: Город Москва алтуфьевское шоссе дом 13 корпус 5 ООО "ЭНКА"</div>
+  </div>
+  <div class="empty-space"></div>
+</body>
+
+</html>

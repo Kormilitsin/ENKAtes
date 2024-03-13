@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Проекты</title>
+  <link rel="icon" href="IMG/ikona.jpg" type="image/x-icon">
+  <script>
+    const screenWidth = window.innerWidth;
+    let deviceType;
+    if (screenWidth >= 1024) {
+      deviceType = "desktop";
+    } else {
+      deviceType = "mobile";
+    }
+    const styleLink = document.createElement("link");
+    styleLink.rel = "stylesheet";
+    if (deviceType === "desktop") {
+      styleLink.href = "CSS/desktop.css";
+    } else {
+      styleLink.href = "CSS/mobile.css";
+    }
+    document.head.appendChild(styleLink);
+  </script>
+</head>
+
+<body>
+  <div class="container">
+	<a href="index.html"><img src="IMG/ENKA_cr.jpg" class="logo" width="200px" height="50px"></a>
+    <div class="tabs">
+      <div class="dropdown">
+        <button onclick="window.location.href='contacts.html'">Контакты</button>
+      </div>
+
+      <div class="dropdown">
+        <button onclick="window.location.href='projects.html'">Проекты</button>
+      </div>
+
+      <div class="dropdown">
+        <button onclick="window.location.href='job.html'">Вакансии</button>
+        </div>
+      </div>
+    </div>
+    <h4>Наши готовые проекты</h4>
+	<div class="projects">
+	  <div class="center-column">
+		<img src="IMG/proj1.jpg">
+		<img src="IMG/proj2.jpg">
+		<img src="IMG/proj3.jpg">
+		<img src="IMG/proj4.jpg">
+	  </div>
+	  <div class="center-column">
+		<img src="IMG/proj5.jpg">
+		<img src="IMG/proj6.jpg">
+		<img src="IMG/proj7.jpg">
+		<img src="IMG/proj8.jpg">
+	  </div>
+	</div>
+  </div>
+  <div class="contacts">
+    <div class="contact-info">Телефон: +7 (906) 366-64-44<span class="divider"></span>Email: primer@mail.ru<span class="divider"></span>Адрес: Город Москва алтуфьевское шоссе дом 13 корпус 5 ООО "ЭНКА"</div>
+  </div>
+    <div class="empty-space"></div>
+</body>
+
+</html>
